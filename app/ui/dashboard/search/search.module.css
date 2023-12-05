@@ -14,3 +14,9 @@
     color           : var(--text);
     outline         : none;
 }
+
+.focus {
+    border: 1px solid white;
+    box-shadow: 5px -4px 8px 0 rgb(159 143 143 / 20%),
+        0 6px 20px 0 rgb(181 157 157 / 19%);
+}

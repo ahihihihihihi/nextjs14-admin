@@ -6,9 +6,15 @@ import styles from "@/app/ui/dashboard/users/users.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-const UsersPage = async () => {
+const UsersPage = async ({ searchParams }) => {
 
-    const users = await fetchUsers()
+    let q = searchParams?.q || "";
+
+    if (q.length < 2) {
+        q = ""
+    }
+
+    const users = await fetchUsers(q)
 
     // console.log(">>>check users: ", users)
 

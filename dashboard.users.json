@@ -1,0 +1,69 @@
+[{
+  "_id": {
+    "$oid": "656f3da83d5648842517b95b"
+  },
+  "username": "John",
+  "email": "john@email.com",
+  "password": "123456",
+  "img": "",
+  "isAdmin": false,
+  "isActive": true,
+  "createdAt": {
+    "$date": "2023-11-23T07:17:47.294Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "656f3ed607551dbf0325fb1b"
+  },
+  "username": "Jane",
+  "email": "jane@email.com",
+  "password": "123456",
+  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+  "isAdmin": false,
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "656f3ef907551dbf0325fb1c"
+  },
+  "username": "Mike",
+  "email": "mike@email.com",
+  "password": "123456",
+  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+  "isAdmin": true,
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "656f3f2a07551dbf0325fb1d"
+  },
+  "username": "Anna",
+  "email": "anna@email.com",
+  "password": "123456",
+  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+  "isAdmin": false,
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "656f3f6307551dbf0325fb1e"
+  },
+  "username": "Harohn",
+  "email": "harohn@email.com",
+  "password": "123456",
+  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+  "isAdmin": false,
+  "isActive": true
+},
+{
+  "_id": {
+    "$oid": "656f3f7a07551dbf0325fb1f"
+  },
+  "username": "Eva",
+  "email": "eva@email.com",
+  "password": "123456",
+  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+  "isAdmin": false,
+  "isActive": false
+}]
