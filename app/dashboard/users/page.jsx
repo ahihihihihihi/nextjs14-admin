@@ -1,4 +1,5 @@
 
+import { fetchUsers } from "@/app/lib/data";
 import Pagination from "@/app/ui/dashboard/pagination/pagination";
 import Search from "@/app/ui/dashboard/search/search";
 import styles from "@/app/ui/dashboard/users/users.module.css";
@@ -6,6 +7,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const UsersPage = async () => {
+
+    const users = await fetchUsers()
+
+    console.log(">>>check users: ", users)
 
     return (
         <div className={styles.container}>
