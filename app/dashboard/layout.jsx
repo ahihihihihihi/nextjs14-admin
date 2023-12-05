@@ -11,8 +11,10 @@ const DashBoardLayout = ({ children }) => {
                 <SideBar />
             </div>
             <div className={styles.content}>
-                <NavBar />
-                {children}
+                <div>
+                    <NavBar />
+                    {children}
+                </div>
                 <Footer />
             </div>
         </div>

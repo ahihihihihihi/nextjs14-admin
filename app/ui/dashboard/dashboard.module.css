@@ -10,8 +10,11 @@
 }
 
 .content {
-    flex   : 4;
-    padding: 20px;
+    flex           : 4;
+    padding        : 20px;
+    display        : flex;
+    justify-content: space-between;
+    flex-direction : column;
 }
 
 .wrapper {
