@@ -9,12 +9,17 @@ import Link from "next/link";
 const UsersPage = async ({ searchParams }) => {
 
     let q = searchParams?.q || "";
+    let page = searchParams?.page || 1;
 
     if (q.length < 2) {
         q = ""
     }
 
-    const users = await fetchUsers(q)
+    if (page < 1) {
+        page = 1
+    }
+
+    const { count, users } = await fetchUsers(q, page)
 
     // console.log(">>>check users: ", users)
 
@@ -72,7 +77,9 @@ const UsersPage = async ({ searchParams }) => {
                     ))}
                 </tbody>
             </table>
-            <Pagination />
+            <Pagination
+                count={count}
+            />
         </div>
     );
 };

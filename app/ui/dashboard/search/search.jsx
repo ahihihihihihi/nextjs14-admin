@@ -27,6 +27,7 @@ const Search = ({ placeholder }) => {
     const handleSearch = useDebouncedCallback((e) => {
         const params = new URLSearchParams(searchParams);
         // console.log(">>>check e: ", e.target.value)
+
         if (e.target.value) {
             if (e.target.value.length === 1) {
                 setMore(true)
@@ -34,6 +35,7 @@ const Search = ({ placeholder }) => {
                 setMore(false)
             }
             params.set("q", e.target.value);
+            params.set("page", 1)
             setFocus(true)
             replace(`${pathname}?${params}`);
 
