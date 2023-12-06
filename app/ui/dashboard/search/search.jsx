@@ -59,8 +59,11 @@ const Search = ({ placeholder }) => {
                     more letters...
                 </span>
             }
-            {focus &&
-                <span onClick={() => handleClearValueInput()}>
+            {focus && inputRef.current.value !== "" &&
+                <span
+                    onClick={() => handleClearValueInput()}
+                    style={{ cursor: "pointer" }}
+                >
                     <VscChromeClose
                         style={{ color: 'red', display: 'block' }}
                     />
