@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "6570276537337990ab48c772"
+  },
+  "title": "test",
+  "desc": "desc",
+  "price": 23.5,
+  "stock": 99,
+  "createdAt": {
+    "$date": "2023-11-23T07:17:47.294Z"
+  },
+  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
+},
+{
+  "_id": {
+    "$oid": "657027df37337990ab48c773"
+  },
+  "title": "test2",
+  "desc": "desc",
+  "price": 35,
+  "stock": 69,
+  "createdAt": {
+    "$date": "2023-11-23T07:17:47.294Z"
+  },
+  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
+},
+{
+  "_id": {
+    "$oid": "657027f937337990ab48c774"
+  },
+  "title": "test3",
+  "desc": "desc",
+  "price": 55,
+  "stock": 96,
+  "createdAt": {
+    "$date": "2023-11-23T07:17:47.294Z"
+  },
+  "img": ""
+}]
