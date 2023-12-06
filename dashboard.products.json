@@ -2,38 +2,51 @@
   "_id": {
     "$oid": "6570276537337990ab48c772"
   },
-  "title": "test",
-  "desc": "desc",
-  "price": 23.5,
-  "stock": 99,
+  "title": "test up",
+  "desc": "mô tả sản phẩm",
+  "price": 25.3,
+  "stock": 69,
   "createdAt": {
     "$date": "2023-11-23T07:17:47.294Z"
   },
-  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
+  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+  "color": "red",
+  "updatedAt": {
+    "$date": "2023-12-06T09:23:28.498Z"
+  }
 },
 {
   "_id": {
     "$oid": "657027df37337990ab48c773"
   },
-  "title": "test2",
-  "desc": "desc",
-  "price": 35,
+  "title": "test2Update",
+  "desc": "mo ta",
+  "price": 35.49,
   "stock": 69,
   "createdAt": {
     "$date": "2023-11-23T07:17:47.294Z"
   },
-  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"
+  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+  "color": "white",
+  "updatedAt": {
+    "$date": "2023-12-06T09:20:54.850Z"
+  }
 },
 {
   "_id": {
-    "$oid": "657027f937337990ab48c774"
+    "$oid": "657032a371a0ec79ae1726fa"
   },
-  "title": "test3",
+  "title": "test4",
   "desc": "desc",
-  "price": 55,
-  "stock": 96,
+  "price": 23.7,
+  "stock": 14,
+  "color": "white",
+  "size": "22",
   "createdAt": {
-    "$date": "2023-11-23T07:17:47.294Z"
+    "$date": "2023-12-06T08:36:51.345Z"
   },
-  "img": ""
+  "updatedAt": {
+    "$date": "2023-12-06T08:36:51.345Z"
+  },
+  "__v": 0
 }]
