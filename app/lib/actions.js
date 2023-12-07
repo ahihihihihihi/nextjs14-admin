@@ -170,7 +170,7 @@ export const authenticate = async (preState, formData) => {
 
     try {
 
-        res = await signIn("credentials", {
+        await signIn("credentials", {
             username: username,
             password: password
         });

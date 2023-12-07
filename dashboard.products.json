@@ -9,10 +9,10 @@
   "createdAt": {
     "$date": "2023-11-23T07:17:47.294Z"
   },
-  "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
+  "img": "https://firebasestorage.googleapis.com/v0/b/blog-98101.appspot.com/o/1701969196614085056logobenhvien108.jpg?alt=media&token=e6665e65-d2c9-4fb2-a7c3-54a0b35a41e4",
   "color": "red",
   "updatedAt": {
-    "$date": "2023-12-06T09:23:28.498Z"
+    "$date": "2023-12-07T17:13:23.767Z"
   }
 },
 {
