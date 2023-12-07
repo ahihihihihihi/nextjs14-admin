@@ -96,8 +96,11 @@ export const deleteProduct = async (formData) => {
 
 
 export const updateUser = async (formData) => {
-    const { id, username, email, password, phone, address, isAdmin, isActive } =
+    const { id, username, email, password, phone, address, isAdmin, isActive, img } =
         Object.fromEntries(formData);
+
+    // console.log(">>>check formData:", formData)
+    // return
 
     try {
         connectToDB();
@@ -110,6 +113,7 @@ export const updateUser = async (formData) => {
             address,
             isAdmin,
             isActive,
+            img
         };
 
         Object.keys(updateFields).forEach(
@@ -128,8 +132,10 @@ export const updateUser = async (formData) => {
 };
 
 export const updateProduct = async (formData) => {
-    const { id, title, desc, price, stock, color, size } =
+    const { id, title, desc, price, stock, color, size, img } =
         Object.fromEntries(formData);
+    // console.log(">>>check formData:", formData)
+    // return
 
     try {
         connectToDB();
@@ -141,6 +147,7 @@ export const updateProduct = async (formData) => {
             stock,
             color,
             size,
+            img
         };
 
         Object.keys(updateFields).forEach(
