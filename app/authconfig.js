@@ -18,7 +18,8 @@ export const authConfig = {
                     return false;
                 }
             } else if (isLoggedIn) {
-                return Response.redirect(new URL("/dashboard", request.nextUrl));
+                // return Response.redirect(new URL("/dashboard", request.nextUrl));
+                return Response.redirect("http://localhost:3000/dashboard");
             }
             return true;
         },

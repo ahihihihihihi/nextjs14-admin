@@ -158,14 +158,18 @@ export const updateProduct = async (formData) => {
     redirect("/dashboard/products");
 };
 
-export const authenticate = async (formData) => {
+export const authenticate = async (preState, formData) => {
     const { username, password } = Object.fromEntries(formData);
 
     try {
-        const res = await signIn("credentials", {
-            username,
-            password
+        if (preState === null) {
+            router.push('/dashboard')
+        }
+        res = await signIn("credentials", {
+            username: username,
+            password: password
         });
+
     } catch (err) {
         return "Wrong Credentials!";
     }
