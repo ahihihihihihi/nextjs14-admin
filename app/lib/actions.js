@@ -162,9 +162,7 @@ export const authenticate = async (preState, formData) => {
     const { username, password } = Object.fromEntries(formData);
 
     try {
-        if (preState === null) {
-            router.push('/dashboard')
-        }
+
         res = await signIn("credentials", {
             username: username,
             password: password
