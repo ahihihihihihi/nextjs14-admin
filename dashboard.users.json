@@ -66,4 +66,42 @@
   "img": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg",
   "isAdmin": false,
   "isActive": false
+},
+{
+  "_id": {
+    "$oid": "6570313071a0ec79ae1726d8"
+  },
+  "username": "secureUserUpdate",
+  "email": "secureuser@email.com",
+  "password": "$2b$10$CDgxj7iG9jDPGLQQpPdrh.waeZWkZi7/bQ8AiXUcybTNsc5JJkc6e",
+  "isAdmin": false,
+  "isActive": true,
+  "phone": "123",
+  "address": "address",
+  "createdAt": {
+    "$date": "2023-12-06T08:30:40.122Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-06T09:09:55.419Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65704ffd1867e1c38ded44e5"
+  },
+  "username": "admin",
+  "email": "admin@email.com",
+  "password": "$2b$10$1PgWeJ9ak91VjgmtBRz/MuJcrMbnpFqBlzR/RYg8cJMqiqCejTSzq",
+  "isAdmin": true,
+  "isActive": true,
+  "phone": "123",
+  "address": "no address",
+  "createdAt": {
+    "$date": "2023-12-06T10:42:05.101Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-06T10:42:05.101Z"
+  },
+  "__v": 0
 }]

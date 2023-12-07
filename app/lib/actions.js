@@ -5,6 +5,7 @@ import { Product, User } from "./models";
 import { connectToDB } from "./utils";
 import { redirect } from "next/navigation";
 import bcrypt from "bcrypt";
+import { signIn } from "../auth";
 
 
 export const addUser = async (formData) => {
@@ -155,4 +156,17 @@ export const updateProduct = async (formData) => {
 
     revalidatePath("/dashboard/products");
     redirect("/dashboard/products");
+};
+
+export const authenticate = async (formData) => {
+    const { username, password } = Object.fromEntries(formData);
+
+    try {
+        const res = await signIn("credentials", {
+            username,
+            password
+        });
+    } catch (err) {
+        return "Wrong Credentials!";
+    }
 };
